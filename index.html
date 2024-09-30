@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Операційна система GNU/Linux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Операційна система GNU/Linux</h1>
+        <nav>
+            <a href="#about">Про GNU/Linux</a>
+            <a href="#distros">Дистрибутиви</a>
+            <a href="#cli">Команди CLI</a>
+            <a href="#bash-script">BASH-сценарій</a>
+            <a href="#sources">Джерела</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="fade-in">
+            <h2>Коротка інформація про ОС GNU/Linux</h2>
+            <p>GNU/Linux — це вільна та відкрита операційна система, заснована на ядрі Linux, розробленому Лінусом Торвальдсом у 1991 році. Вона є альтернативою закритим операційним системам, як Windows та macOS, і широко використовується на серверах, суперкомп'ютерах, а також у настільних комп'ютерах.</p>
+        </section>
+
+        <section id="distros" class="fade-in">
+            <h2>Найпопулярніші дистрибутиви GNU/Linux</h2>
+            <ul>
+                <li>Ubuntu</li>
+                <li>Debian</li>
+                <li>Fedora</li>
+                <li>Arch Linux</li>
+                <li>CentOS</li>
+                <li>Linux Mint</li>
+                <li>OpenSUSE</li>
+            </ul>
+        </section>
+
+        <section id="cli" class="fade-in">
+            <h2>Приклади команд роботи в Linux CLI</h2>
+            <ul>
+                <li><strong>pwd</strong> — відображає поточний робочий каталог.</li>
+                <li><strong>echo</strong> — виводить текст або значення змінної.</li>
+                <li><strong>ls</strong> — показує вміст каталогу.</li>
+                <li><strong>cd</strong> — змінює робочий каталог.</li>
+                <li><strong>touch</strong> — створює новий файл.</li>
+                <li><strong>mkdir</strong> — створює новий каталог.</li>
+                <li><strong>cp</strong> — копіює файли або каталоги.</li>
+                <li><strong>mv</strong> — переміщує або перейменовує файли.</li>
+                <li><strong>rm</strong> — видаляє файли або каталоги.</li>
+                <li><strong>history</strong> — показує історію виконаних команд.</li>
+            </ul>
+        </section>
+
+        <section id="bash-script" class="fade-in">
+            <h2>Приклад BASH-скрипта (імітація авторизації)</h2>
+            <pre><code>
+#!/bin/bash
+correct_username="user"
+correct_password="password"
+
+echo "Введіть ім'я користувача:"
+read username
+
+echo "Введіть пароль:"
+read -s password
+
+if [[ "$username" == "$correct_username" && "$password" == "$correct_password" ]]; then
+    echo "Авторизація успішна!"
+else
+    echo "Невірне ім'я користувача або пароль."
+fi
+            </code></pre> 
+            <p id="script-output"></p>
+        </section>
+
+        <section id="sources" class="fade-in">
+            <h2>Джерела інформації</h2>
+            <ul>
+                <li><a href="https://www.kernel.org" target="_blank">Kernel.org</a></li>
+                <li><a href="https://www.gnu.org" target="_blank">GNU Project</a></li>
+                <li><a href="https://ubuntu.com" target="_blank">Офіційний сайт Ubuntu</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Інформація про GNU/Linux</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
